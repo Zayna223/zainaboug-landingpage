@@ -1,0 +1,200 @@
+/* Write some CSS below */
+
+body {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 18px;
+  font-family: 'Arial';
+}
+
+list-menu {
+  list-style: none; 
+}
+
+.list-menu li {
+  display: inline;
+}
+
+.btn-menu {
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  padding: 10px 15px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.btn-menu:hover {
+  background-color: #F19C94;
+  color: black;
+  transition: 0.3;
+  transform: translateX(10px);
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  color: black;
+}
+
+h1 {
+  color: white;
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+font-size: 24px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.banner {
+  background-image: url(images/profil2.png);
+  background-position: center;
+  background-size: cover;
+  padding: 150px 0;
+  text-align: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.banner p{
+  font-weight: 900;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 50px;
+  opacity: 0.9;
+}
+
+.btn-white {
+  background-color: #F9F6F1;
+   color: black;
+   border-radius: 15px;
+   padding: 20px 30px;
+   font-size: 15px;
+   font-weight: 700;
+   margin-top: 150px;
+}
+
+.btn-white:hover{
+  opacity: 1;
+  background: #F19C94;
+}
+
+.btn-black{
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.btn-black:hover{
+  opacity: 1;
+  background:rgb(220, 106, 106);
+}
+
+#intro{
+ text-align:center;
+ background-position: center;
+ background-size: cover;
+ background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+ padding: 40px;
+}
+
+.presentation-marque{
+  margin-bottom: 50px;
+  color: black;
+}
+.titre1{
+  margin-top: 20px;
+}
+.container {
+  width: 900px;
+  margin: 20px auto;
+}
+#productscards{
+  color: black;
+}
+.card-white {
+  background-color: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  padding: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card-white img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.footer {
+  background-color: white;
+  background-image: url(images/footer02.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  color: black;
+  padding: 50px 0;
+}
+
+.footer p {
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  margin-right: 40px;
+}
+
+.list-inline{
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  margin-right: 60px;
+}
+
+.contact{
+  color: white;
+  margin-right: 40px;
+}
+.cards-inline{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+@media (max-width:960px) {
+  .container {
+    width: 900px;
+  }
+  .cards-inline{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 720px){
+  .container{
+    width: 680px;
+  }
+  .cards-inline{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width:540px){
+  .container{
+    width: 400px;
+  }
+  .cards-inline{
+    grid-template-columns: 1fr;
+  }
+}
